@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".view.NoteUpdateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <include
+            android:id="@+id/note_toolbar"
+            layout="@layout/note_toolbar"/>
+
+        <TextView
+            android:id="@+id/change_category_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/change_category_txt"
+            android:fontFamily="@font/nexa_bold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/note_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <Spinner
+            android:id="@+id/change_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/rounded_desert_sunset_bg"
+            style="@style/spinnerItemStyle"
+            android:entries="@array/category_headers_spinner"
+            app:layout_constraintTop_toBottomOf="@id/change_category_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/note_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="November 7, 2022 11:04 PM"
+            android:fontFamily="@font/nexa_light"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/change_category_spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/note_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/title"
+            android:fontFamily="@font/nexa_bold"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/note_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <EditText
+            android:id="@+id/note_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:hint="@string/note_down"
+            android:fontFamily="@font/nexa_bold"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.3"
+            app:layout_constraintTop_toBottomOf="@id/note_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/add_bullet_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/add_bullet_icon"
+            android:text="@string/bullet"
+            android:fontFamily="@font/nexa_bold"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/note_content"
+            app:layout_constraintStart_toEndOf="@id/add_reminder_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <Button
+            android:id="@+id/add_reminder_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/reminder_icon"
+            android:text="@string/reminder"
+            android:fontFamily="@font/nexa_bold"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/add_bullet_btn"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

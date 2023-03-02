@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">LaunchPad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="long_string">The team name would be SpringCloud (Proverbs 16:15 Our products
+        shall receive my king\'s favor and give life).^^cloud and small rains logo.^^spring rain
+        makes land fertile, so our product is a platform for businesses to be grown and managed.
+        The team name would be SpringCloud (Proverbs 16:15 Our products
+        shall receive my king\'s favor and give life).^^cloud and small rains logo.^^spring rain
+        makes land fertile, so our product is a platform for businesses to be grown and managed.
+        The team name would be SpringCloud (Proverbs 16:15 Our products
+        shall receive my king\'s favor and give life).^^cloud and small rains logo.^^spring rain
+        makes land fertile, so our product is a platform for businesses to be grown and managed.
+        The team name would be SpringCloud (Proverbs 16:15 Our products
+        shall receive my king\'s favor and give life).^^cloud and small rains logo.^^spring rain
+        makes land fertile, so our product is a platform for businesses to be grown and managed.
+        The team name would be SpringCloud (Proverbs 16:15 Our products
+        shall receive my king\'s favor and give life).^^cloud and small rains logo.^^spring rain
+        makes land fertile, so our product is a platform for businesses to be grown and managed.
+    </string>
+    <string name="user_name">CreativeHazio</string>
+    <string name="add_note">Add note</string>
+    <string name="title">Title</string>
+    <string name="note_down">Note something down....</string>
+    <string name="reminder">Reminder</string>
+    <string name="bullet">Bullet</string>
+    <string-array name="category_headers_spinner">
+        <item>Personal</item>
+        <item>Work</item>
+        <item>Health</item>
+        <item>Finance</item>
+        <item>Hobbies</item>
+        <item>Other</item>
+    </string-array>
+    <string name="all">All</string>
+    <string name="personal">Personal</string>
+    <string name="work">Work</string>
+    <string name="health">Health</string>
+    <string name="finance">Finance</string>
+    <string name="hobby">Hobbies</string>
+    <string name="other">Other</string>
+    <string name="all_fragment">AllFragment</string>
+    <string name="personal_fragment">PersonalFragment</string>
+    <string name="work_fragment">WorkFragment</string>
+    <string name="health_fragment">HealthFragment</string>
+    <string name="finance_fragment">FinanceFragment</string>
+    <string name="hobby_fragment">HobbyFragment</string>
+    <string name="other_fragment">OtherFragment</string>
+    <string name="change_category_txt">Change category</string>
+    <string name="search_notes">Search notes...</string>
+    <string name="profile">Profile</string>
+    <string name="summarizing_text_loading">Please wait while your text is being summarized</string>
+    <string name="enter_text_here">Enter text here</string>
+    <string name="clear_text">Clear text</string>
+    <string name="summarize_text">Summarize text</string>
+    <string name="note">Note</string>
+    <string name="text_summarizer">Text summarizer</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <string name="note_added_success">Note added!!</string>
+    <string name="note_added_failed">Failed to save note!!</string>
+    <string name="nav_notes_group">Notes</string>
+    <string name="ai_tools_group">A.I Tools</string>
+    <string name="upgrade_group">Upgrade</string>
+    <string name="get_premium">Get premium</string>
+    <string name="video_transcript">Video transcript</string>
+    <string name="audio_transcript">Audio transcript</string>
+    <string name="sync_to_cloud">Sync to cloud</string>
+    <string name="download_from_cloud">Download from cloud</string>
+    <string name="sign_in_to_sync_to_cloud">Sign in to sync to cloud</string>
+    <string name="hey_creative">Hey Creative</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="note_empty">Note is empty!!</string>
+</resources>

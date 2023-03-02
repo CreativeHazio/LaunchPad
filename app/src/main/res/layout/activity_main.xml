@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/main_toolbar"
+                layout="@layout/main_toolbar"/>
+
+            <FrameLayout
+                android:id="@+id/note_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/main_toolbar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_desert_sunset_bg"
+                    android:gravity="center"
+                    android:text="This is a Google ads"
+                    android:fontFamily="@font/nexa_light"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_note_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="60dp"
+                    android:src="@drawable/ic_add_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!--    <com.google.android.gms.ads.AdView-->
+            <!--        android:id="@+id/banner_adview"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginBottom="10dp"-->
+            <!--        ads:adSize="BANNER"-->
+            <!--        ads:adUnitId="@string/test_banner_ad_unit"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/main_navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:itemBackground="@drawable/nav_view_checked_bg"
+            app:itemTextAppearance="@style/NavDrawerText"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/menu_navigation_drawer"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/rounded_desert_sunset_bg"-->
+<!--        android:gravity="center"-->
+<!--        android:text="This is a Google ads"-->
+<!--        android:fontFamily="@font/nexa_light"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/add_note_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        android:src="@drawable/ic_add_white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+The activity displays the view
+
+The repository initialize the data whether from Room or API calls
+
+The view-model controls how and what to be displayed, It is the business logic
+the view-model gets data from the repository and perform logic on it.
+
+What is a v24 drawable file
+Check on how to perform operations onSwipe
+Check on how to use Extended floating action button
+How to increase line spacing
+Check unsupported OS versions of ParentActivityName
+Why should your inner classes be static
+How to sync multiple objects
+Can a view model perform lifecycle operations
+What is editor.commit();
+
+Set default for User_role in the model class
+Set category indicators with a smaller dot of different color
+Use a different font for the app
+Use a single floating button on main activity, then get current fragment category TAG and use it as
+the selected item in the spinner category
+Start of synctocloud activity, if firebase current user == null. Start signup activity
+Use grammar corrector?

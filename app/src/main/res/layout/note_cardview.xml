@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:backgroundTintMode="src_atop"
+    android:backgroundTint="?attr/cardBackgroundColor"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="9dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Title"
+            android:textSize="20sp"
+            android:fontFamily="@font/nexa_bold"
+            android:ellipsize="end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/note_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/rounded_desert_sunset_bg"
+            android:text="Category"
+            android:fontFamily="@font/nexa_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="7"
+            android:lineSpacingMultiplier="1.4"
+            android:ellipsize="end"
+            android:text="This is the contents of the app"
+            android:fontFamily="@font/nexa_bold"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:fontFamily="@font/nexa_light"
+            android:text="November 7, 2022 11:04 PM"
+            app:layout_constraintTop_toBottomOf="@id/contents"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
