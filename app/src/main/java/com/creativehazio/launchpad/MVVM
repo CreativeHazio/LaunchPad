@@ -22,3 +22,6 @@ Use a single floating button on main activity, then get current fragment categor
 the selected item in the spinner category
 Start of synctocloud activity, if firebase current user == null. Start signup activity
 Use grammar corrector?
+
+Create a class called CloudNote with two parameters Name and Arraylist of notes to sync note to the cloud
+When loading back notes we then set only the arraylist gotten into our room database

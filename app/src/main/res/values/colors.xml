@@ -14,5 +14,7 @@
     <color name="blue_stone_background">#1F2280D7</color>
     <color name="desert_sunset">#f5a623</color>
     <color name="transparent_desert_sunset">#E0F5A623</color>
+    <color name="transparent">#00F5A623</color>
     <color name="cardview_desert_sunset">#B1E8B766</color>
+    <color name="text_color">?android:textColor</color>
 </resources>

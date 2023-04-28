@@ -11,6 +11,9 @@ public interface OpenAiApi {
     @POST("completions")
     Call<Text> createTextCompletionPost(@Body Text text);
 
+    @POST
+    Call<Text> createAudioTranscriptPost();
+
     @POST("edits")
     Call<Text> createTextEditPost(@Body Text text);
 }

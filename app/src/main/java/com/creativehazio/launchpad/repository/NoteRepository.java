@@ -3,15 +3,25 @@ package com.creativehazio.launchpad.repository;
 import android.content.Context;
 import android.os.AsyncTask;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
 import com.creativehazio.launchpad.database.NoteRoomDatabase;
 import com.creativehazio.launchpad.model.Note;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
+import java.util.Map;
 
 //TODO: Sync notes to cloud, get notes from cloud.
 public class NoteRepository {
+
+    private FirebaseFirestore firestore;
+    private FirebaseUser firebaseUser;
 
     private static NoteRepository noteRepository;
     private NoteRoomDatabase database;
@@ -104,4 +114,36 @@ public class NoteRepository {
             return null;
         }
     }
+
+    public void syncNotesToCloud(Context context){
+//        new SyncNotesToCloudAsyncTask(context).execute();
+    }
+
+    private class SyncNotesToCloudAsyncTask extends AsyncTask<Void,Void,Void> {
+
+        private Context context;
+
+        public SyncNotesToCloudAsyncTask(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            MutableLiveData<List<Note>> data = getAllNotesFromDatabase(context);
+            firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+            firestore = FirebaseFirestore.getInstance();
+
+            firestore.collection("users_notes")
+                    .document(firebaseUser.getUid())
+                    .set(data)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                        }
+                    });
+            return null;
+        }
+    }
+
 }

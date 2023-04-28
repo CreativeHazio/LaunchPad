@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597586555189",
+    "project_id": "lauchpad-6a744",
+    "storage_bucket": "lauchpad-6a744.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597586555189:android:30f1815b9bba868f831c7c",
+        "android_client_info": {
+          "package_name": "com.creativehazio.launchpad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597586555189-detk3rk1irick86ki1utojreqmccf0us.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAxrnDg3LN29OmF4smlImfXmq7iH_Ofcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597586555189-7n881mn4aonlk6hkodrsl2qqo9u0vhpi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

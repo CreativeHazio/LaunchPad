@@ -46,17 +46,13 @@
         <item android:title="@string/ai_tools_group">
             <menu>
                 <item
-                    android:title="@string/video_transcript"
+                    android:title="@string/ai_transcribe"
                     android:icon="@drawable/video_transcript_icon"
-                    android:id="@+id/nav_video_transcript"/>
+                    android:id="@+id/nav_ai_transcribe"/>
                 <item
-                    android:title="@string/audio_transcript"
-                    android:icon="@drawable/audio_transcript_icon"
-                    android:id="@+id/nav_audio_transcript"/>
-                <item
-                    android:title="@string/text_summarizer"
+                    android:title="@string/ai_summarize"
                     android:icon="@drawable/summarizer_icon"
-                    android:id="@+id/nav_summarizer"/>
+                    android:id="@+id/nav_ai_summarize"/>
             </menu>
         </item>
 

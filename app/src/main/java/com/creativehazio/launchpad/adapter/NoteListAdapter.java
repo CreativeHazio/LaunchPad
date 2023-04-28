@@ -26,9 +26,6 @@ public class NoteListAdapter
         extends RecyclerView.Adapter<NoteListAdapter.ViewHolder>
         implements Filterable {
 
-    private Context context;
-    private ArrayList<Note> noteArrayList;
-    private ArrayList<Note> noteArrayListFull;
     private Listener listener;
 
     public interface Listener {
@@ -39,6 +36,10 @@ public class NoteListAdapter
     public void setListener(Listener listener) {
         this.listener = listener;
     }
+
+    private Context context;
+    private ArrayList<Note> noteArrayList;
+    private ArrayList<Note> noteArrayListFull;
 
     public NoteListAdapter(Context context, ArrayList<Note> noteArrayList) {
         this.context = context;
@@ -166,6 +167,8 @@ public class NoteListAdapter
 
     public void refreshNoteArrayList(List<Note> notes) {
         this.noteArrayList = (ArrayList<Note>) notes;
+//        this.noteArrayListFull = noteArrayList;
+//        this.noteArrayList = new ArrayList<>(noteArrayListFull);
         notifyDataSetChanged();
     }
 

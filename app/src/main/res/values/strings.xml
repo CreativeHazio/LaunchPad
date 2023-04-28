@@ -70,6 +70,23 @@
     <string name="sign_in_to_sync_to_cloud">Sign in to sync to cloud</string>
     <string name="hey_creative">Hey Creative</string>
     <string name="dark_mode">Dark mode</string>
-    <string name="app_version">Version 1.0.0</string>
+    <string name="app_version">Version 1.0.00</string>
     <string name="note_empty">Note is empty!!</string>
+    <string name="ai">AI</string>
+    <string name="open_ai_model">text-davinci-003</string>
+    <string name="internet_conn_poor">Check your internet connection and try again!!</string>
+    <string name="leave_app">Leave App?</string>
+    <string name="exit_app">Are you sure you want to exit app?</string>
+    <string name="exit">Exit App</string>
+    <string name="continue_in_app">Continue In App</string>
+    <string name="signing_into_google_loading">Connecting to Google servers, Please wait!!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_out_success">You have signed out successfully</string>
+    <string name="ai_transcribe">AI Transcribe</string>
+    <string name="ai_summarize">AI Summarize</string>
+    <string name="enter_website_link_here">Enter website link</string>
+    <string name="summarize_website">Summarize website content</string>
+    <string name="enter_youtube_link_here">Enter youtube link</string>
+    <string name="enter_youtube_video_name_here">Enter video name</string>
+    <string name="summarize_youtube">Summarize youtube video</string>
 </resources>
